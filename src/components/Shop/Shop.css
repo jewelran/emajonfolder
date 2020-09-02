@@ -1,0 +1,22 @@
+.product_container{
+    text-align: left;
+    margin:20px -25px;
+    color: blue;
+    list-style: none;
+
+}
+.shot_container{
+    display: flex;
+}
+.product_container{
+    width: 75%;
+    margin-left: 20px;
+}
+.curd-container{
+    width: 25%;
+    height: 30rem;
+    margin-right: 10px;
+    border: 1px solid gray;
+    margin-top: 20px;
+    border-left: none;
+}

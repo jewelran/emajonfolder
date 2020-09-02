@@ -1,0 +1,38 @@
+.product-container{
+    border-left: none;
+    padding: 10px;
+    width: 70%;
+}
+.product-full-container{
+    display: flex;
+    line-height: 20px;
+    border:1px solid grey;
+    border-bottom:none;
+    border-left: none;
+    width: 95%;
+    margin: 0 auto;
+
+}
+.img-container{
+    width: 30%;
+    padding: 20px;
+    margin-left: 2rem;
+
+}
+.img-container img{
+    width: 90%;
+}
+.AddcartBtn{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    color:white;
+    background: orange;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+.AddcartBtn:hover{
+    background: rgba(211, 138, 4, 0.74);
+    transition: 0.3s ease;
+}
