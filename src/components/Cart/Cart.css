@@ -1,0 +1,19 @@
+.orderBtn{
+    padding: 7px 40px;
+    border: none;
+    border-radius: 8px;
+    color:white;
+    background: orange;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid grey;
+    margin-top:1rem;
+}
+.orderBtn:hover{
+    background: rgba(221, 146, 7, 0.829);
+    transition: 0.3s ease;
+}
+.summery_container{
+    text-align: left;
+    padding-left: 2rem;
+}
