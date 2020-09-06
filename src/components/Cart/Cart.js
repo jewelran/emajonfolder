@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css'
 const Cart = (props) => {
     const cart = props.cart;
-    // const totalPrice = cart.reduce((total , prd) => total+ prd.price,  0)
+    // const totalPrice = cart.reduce((total , prd) => total+ prd.price,  0) for loope er poriborte eita diye kaj kore jane... this is ruduce funtion...........
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
@@ -17,10 +17,10 @@ const Cart = (props) => {
         shipping = 20.00;
     }
     let text =(total / 10);
-    const grandTotal = Math.round(total + shipping + Number(text))
-    const formetNum = num=> {
+        const grandTotal = Math.round(total + shipping + Number(text))
+        const formetNum = num=> {
         const presition = num.toFixed(2);
-        return Number(presition)
+            return Number(presition)
     }
     return (
         <div className = 'summery_container'>
