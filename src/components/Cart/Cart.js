@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css'
 const Cart = (props) => {
     const cart = props.cart;
-    // const totalPrice = cart.reduce((total , prd) => total+ prd.price,  0) for loope er poriborte eita diye kaj kore jane... this is ruduce funtion...........
+    // const totalPrice = cart.reduce((total , prd) => total+ prd.price,  0) for loope er poriborte eita diye kaj kore jabe... this is reduce funtion...........
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
