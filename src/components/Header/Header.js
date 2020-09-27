@@ -8,9 +8,9 @@ const Header = () => {
         <div className = 'header'>
            <img src={logo} alt=""/>
            <nav >
-               <a href="shop">Shop</a>
-               <a href="Review">Over Review</a>
-               <a href="manage">Manage invantory Here</a> <br/>
+               <a className="list" href="shop">Shop</a>
+               <a className="list" href="Review">Over Review</a>
+               <a className="list" href="Inventory">invantory</a> <br/>
                <br/> <input type="text" placeholder= "Search here"/>
                <button className='searchBtn'>surch here</button>
                   <span style={{marginLeft:"30px"}}><FontAwesomeIcon style={{color:'white'}} icon={faShoppingCart} /> <small style={{color:"white",fontSize:"20px",marginLeft:"15px"}}>0</small></span>

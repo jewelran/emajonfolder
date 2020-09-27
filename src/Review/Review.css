@@ -1,0 +1,10 @@
+.full_container{
+    display: flex;
+}
+
+
+.cart-container{
+    width: 30%;
+    float: left;
+    
+} 
