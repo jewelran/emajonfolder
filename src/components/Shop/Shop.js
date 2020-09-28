@@ -8,20 +8,29 @@ import { addToDatabaseCart, getDatabaseCart } from '../../utilities/databaseMana
 const Shop = () => {
     const first10 = fakeData.slice(0, 20);
     const [cart, setCart] = useState([])
-
-    useEffect( () =>{
-        const saveCart = getDatabaseCart()
+    useEffect( () => {
+        const saveCart = getDatabaseCart();
         const productKey = Object.keys(saveCart);
-        const previousCart = productKey.map( existingKey => {
-            const product = fakeData.find( pd => pd.key === existingKey);
-            product.quantity = saveCart[existingKey];
-            return product
-            // console.log(existingKey, saveCart[existingKey]);
-            
+        const previousCart = productKey.map( pdKey => {
+            const product = fakeData.find( pd => pd.key === pdKey);
+            product.quantity = saveCart[pdKey];
+            return product;
         })
-        console.log(productKey)
         setCart(previousCart)
     },[])
+
+    // useEffect( () =>{
+    //     const saveCart = getDatabaseCart()
+    //     const productKey = Object.keys(saveCart);
+    //     const previousCart = productKey.map( existingKey => {
+    //         const product = fakeData.find( pd => pd.key === existingKey);
+    //         product.quantity = saveCart[existingKey];
+    //         return product;
+            
+    //     })
+    //     // console.log(productKey)
+    //     setCart(previousCart)
+    // },[])
     const [product, setProduct] = useState(first10);
 
     const handleAddProduct = (product) =>{
