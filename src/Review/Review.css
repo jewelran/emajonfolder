@@ -1,5 +1,6 @@
 .full_container{
     display: flex;
+    padding: 70px;
 }
 
 
@@ -7,4 +8,7 @@
     width: 30%;
     float: left;
     
+}
+.orderBtn{
+    font-size: 15px;
 } 

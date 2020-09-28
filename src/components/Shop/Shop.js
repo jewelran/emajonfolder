@@ -2,12 +2,14 @@ import React, { useEffect } from 'react';
 import fakeData from '../../fakeData';
 import { useState } from 'react';
 import './Shop.css'
+import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import { addToDatabaseCart, getDatabaseCart } from '../../utilities/databaseManager';
 const Shop = () => {
     const first10 = fakeData.slice(0, 20);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
+
     useEffect( () => {
         const saveCart = getDatabaseCart();
         const productKey = Object.keys(saveCart);
@@ -65,7 +67,11 @@ const Shop = () => {
              
         </div>
        <div className="curd-container">
-           <Cart cart = {cart}></Cart>
+           <Cart cart = {cart}>
+           <Link to='/Review'>
+                <button className= "orderBtn">Oredr Review</button>
+            </Link>
+           </Cart>
        </div>
         </div>
     );
