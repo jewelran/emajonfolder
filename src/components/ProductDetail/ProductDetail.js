@@ -12,7 +12,6 @@ const ProductDetail = () => {
         <div className ="product_container">
             <h2 style={{textAlign:"center",color:"black"}}> Your Product Details</h2>
             <Product showAddToCard =  {false} product = {product}></Product>
-           <h2 style ={{textAlign:"center",color:"black"}}> thank you  for chousing ema-jon.com</h2>
         </div>
     );
 };

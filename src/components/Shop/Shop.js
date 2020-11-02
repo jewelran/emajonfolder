@@ -58,10 +58,7 @@ const Shop = () => {
         <div className="shot_container">
             <div className="product_container">
                 {
-                    product.map(
-                        pd => <Product key = {pd.key} showAddToCard ={true}
-                                                handleAddProduct={handleAddProduct}
-                                                product= {pd} />)
+                    product.map( pd => <Product key = {pd.key} showAddToCard ={true}  handleAddProduct={handleAddProduct} product= {pd} />)
                     
                 }
              
